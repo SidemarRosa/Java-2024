@@ -1,14 +1,19 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        String fabricanteCarro = "Ford";
-        String modeloCarro = "Mustang";
-        int anoCarro = 2024;
+        String modelo = "Gol quadrado";
+        String cor = "Azul";
+        String ano = "2015";
+        String marca = "Volkswagen";
+        String placa = "ABC1234";
 
-        String carroEscolhido = carroDosSonhos(fabricanteCarro, modeloCarro, anoCarro);
+        String meuCarro = " Meu " + modelo + " Cor " + cor +" ano "+ ano +" da fabricante "  + marca + "  placa " + placa;
 
-        System.out.println(carroEscolhido);
+        System.out.println( "O" + meuCarro + " " + freiarCarro(meuCarro));
     }
-    public static String carroDosSonhos (String fabricanteCarro, String modeloCarro, Integer anoCarro) {
-        return "O carro dos meus sonhos é um " + fabricanteCarro + " " + modeloCarro + " " +anoCarro;
+    public static String acelerarCarro( String acelerar ) {
+        return "acelerou";
+    }
+    public static String freiarCarro( String freiar ) {
+        return "freou";
     }
 }
